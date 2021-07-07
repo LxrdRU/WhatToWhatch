@@ -3,29 +3,63 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		759AC544268E822000F76351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759AC543268E822000F76351 /* AppDelegate.swift */; };
-		759AC546268E822000F76351 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759AC545268E822000F76351 /* SceneDelegate.swift */; };
-		759AC548268E822000F76351 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759AC547268E822000F76351 /* ViewController.swift */; };
-		759AC54B268E822000F76351 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759AC549268E822000F76351 /* Main.storyboard */; };
-		759AC54E268E822000F76351 /* WhatToWhatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 759AC54C268E822000F76351 /* WhatToWhatch.xcdatamodeld */; };
+		7572E1E82692BAA7006FDDAF /* CustomOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7572E1E72692BAA7006FDDAF /* CustomOverlayView.xib */; };
+		7572E1F22694E1EE006FDDAF /* CustomOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572E1F12694E1EE006FDDAF /* CustomOverlayView.swift */; };
+		7572E1F4269501E9006FDDAF /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572E1F3269501E8006FDDAF /* MovieTableViewCell.swift */; };
+		7572E1FE269657E0006FDDAF /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572E1FD269657E0006FDDAF /* Checkbox.swift */; };
+		759893D8268E8B41005F00AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759893D7268E8B41005F00AD /* AppDelegate.swift */; };
+		759893DA268E8C64005F00AD /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759893D9268E8C64005F00AD /* StorageManager.swift */; };
+		759893DC268E8C6C005F00AD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759893DB268E8C6C005F00AD /* NetworkManager.swift */; };
+		759893DE268E8C73005F00AD /* TinderCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759893DD268E8C73005F00AD /* TinderCardModel.swift */; };
+		759893E0268E8C78005F00AD /* Similar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759893DF268E8C78005F00AD /* Similar.swift */; };
+		759893E2268E8C7E005F00AD /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759893E1268E8C7E005F00AD /* Movie.swift */; };
+		759893E4268E8C86005F00AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759893E3268E8C85005F00AD /* LaunchScreen.storyboard */; };
+		759893E6268E8C8A005F00AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759893E5268E8C89005F00AD /* Main.storyboard */; };
+		759893E8268E8C8F005F00AD /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 759893E7268E8C8F005F00AD /* CustomView.xib */; };
+		759893EA268E8C95005F00AD /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759893E9268E8C95005F00AD /* CustomView.swift */; };
+		759893EC268E8CA2005F00AD /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759893EB268E8CA2005F00AD /* DataViewController.swift */; };
+		759893F0268E8CAC005F00AD /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759893EF268E8CAC005F00AD /* ResultViewController.swift */; };
+		759893F2268E8CEA005F00AD /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759893F1268E8CEA005F00AD /* UIView+Extensions.swift */; };
+		759893F4268E934C005F00AD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759893F3268E934C005F00AD /* MainViewController.swift */; };
+		759893F6268E9EC3005F00AD /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 759893F5268E9EC2005F00AD /* Montserrat-Medium.ttf */; };
 		759AC550268E822300F76351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759AC54F268E822300F76351 /* Assets.xcassets */; };
 		759AC553268E822300F76351 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759AC551268E822300F76351 /* LaunchScreen.storyboard */; };
+		759AC58E268E881900F76351 /* WhatToWhatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 759AC58C268E881900F76351 /* WhatToWhatch.xcdatamodeld */; };
+		7AB83DC341BABE538186BCF0 /* Pods_WhatToWhatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E196B96E27BBBA2F99A28F99 /* Pods_WhatToWhatch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C3D4163F2404A0501ADDAD8 /* Pods-WhatToWhatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWhatch.release.xcconfig"; path = "Target Support Files/Pods-WhatToWhatch/Pods-WhatToWhatch.release.xcconfig"; sourceTree = "<group>"; };
+		5DAED544211629304A8D5CA5 /* Pods-WhatToWhatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWhatch.debug.xcconfig"; path = "Target Support Files/Pods-WhatToWhatch/Pods-WhatToWhatch.debug.xcconfig"; sourceTree = "<group>"; };
+		7572E1E72692BAA7006FDDAF /* CustomOverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomOverlayView.xib; sourceTree = "<group>"; };
+		7572E1F12694E1EE006FDDAF /* CustomOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOverlayView.swift; sourceTree = "<group>"; };
+		7572E1F3269501E8006FDDAF /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		7572E1FD269657E0006FDDAF /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		759893D7268E8B41005F00AD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		759893D9268E8C64005F00AD /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		759893DB268E8C6C005F00AD /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		759893DD268E8C73005F00AD /* TinderCardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderCardModel.swift; sourceTree = "<group>"; };
+		759893DF268E8C78005F00AD /* Similar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Similar.swift; sourceTree = "<group>"; };
+		759893E1268E8C7E005F00AD /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		759893E3268E8C85005F00AD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		759893E5268E8C89005F00AD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		759893E7268E8C8F005F00AD /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		759893E9268E8C95005F00AD /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		759893EB268E8CA2005F00AD /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		759893EF268E8CAC005F00AD /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		759893F1268E8CEA005F00AD /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		759893F3268E934C005F00AD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		759893F5268E9EC2005F00AD /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		759AC540268E822000F76351 /* WhatToWhatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatToWhatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		759AC543268E822000F76351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		759AC545268E822000F76351 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		759AC547268E822000F76351 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		759AC54A268E822000F76351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		759AC54D268E822000F76351 /* WhatToWhatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhatToWhatch.xcdatamodel; sourceTree = "<group>"; };
 		759AC54F268E822300F76351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		759AC552268E822300F76351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		759AC554268E822300F76351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		759AC58D268E881900F76351 /* WhatToWhatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhatToWhatch.xcdatamodel; sourceTree = "<group>"; };
+		E196B96E27BBBA2F99A28F99 /* Pods_WhatToWhatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWhatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +67,96 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB83DC341BABE538186BCF0 /* Pods_WhatToWhatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15085CDA459E72B4224E5AFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DAED544211629304A8D5CA5 /* Pods-WhatToWhatch.debug.xcconfig */,
+				0C3D4163F2404A0501ADDAD8 /* Pods-WhatToWhatch.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		61740D67B774A0D2D7142989 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E196B96E27BBBA2F99A28F99 /* Pods_WhatToWhatch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7572E1F6269655CE006FDDAF /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				7572E1E72692BAA7006FDDAF /* CustomOverlayView.xib */,
+				7572E1F12694E1EE006FDDAF /* CustomOverlayView.swift */,
+				759893E7268E8C8F005F00AD /* CustomView.xib */,
+				759893E9268E8C95005F00AD /* CustomView.swift */,
+			);
+			path = VIews;
+			sourceTree = "<group>";
+		};
+		7572E1F726965613006FDDAF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				759893F3268E934C005F00AD /* MainViewController.swift */,
+				759893EB268E8CA2005F00AD /* DataViewController.swift */,
+				759893EF268E8CAC005F00AD /* ResultViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7572E1F82696572F006FDDAF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				759893D9268E8C64005F00AD /* StorageManager.swift */,
+				759893DB268E8C6C005F00AD /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		7572E1F92696575F006FDDAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				759893DF268E8C78005F00AD /* Similar.swift */,
+				759893E1268E8C7E005F00AD /* Movie.swift */,
+				759893DD268E8C73005F00AD /* TinderCardModel.swift */,
+				759AC58C268E881900F76351 /* WhatToWhatch.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7572E1FB2696579E006FDDAF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				759893F5268E9EC2005F00AD /* Montserrat-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7572E1FC269657C3006FDDAF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7572E1F3269501E8006FDDAF /* MovieTableViewCell.swift */,
+				759893F1268E8CEA005F00AD /* UIView+Extensions.swift */,
+				7572E1FD269657E0006FDDAF /* Checkbox.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		759AC537268E822000F76351 = {
 			isa = PBXGroup;
 			children = (
 				759AC542268E822000F76351 /* WhatToWhatch */,
 				759AC541268E822000F76351 /* Products */,
+				15085CDA459E72B4224E5AFE /* Pods */,
+				61740D67B774A0D2D7142989 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +171,18 @@
 		759AC542268E822000F76351 /* WhatToWhatch */ = {
 			isa = PBXGroup;
 			children = (
-				759AC543268E822000F76351 /* AppDelegate.swift */,
-				759AC545268E822000F76351 /* SceneDelegate.swift */,
-				759AC547268E822000F76351 /* ViewController.swift */,
-				759AC549268E822000F76351 /* Main.storyboard */,
+				7572E1FC269657C3006FDDAF /* Extensions */,
+				7572E1FB2696579E006FDDAF /* Fonts */,
+				7572E1F92696575F006FDDAF /* Models */,
+				7572E1F82696572F006FDDAF /* Managers */,
+				7572E1F726965613006FDDAF /* ViewControllers */,
+				7572E1F6269655CE006FDDAF /* VIews */,
+				759893E5268E8C89005F00AD /* Main.storyboard */,
+				759893E3268E8C85005F00AD /* LaunchScreen.storyboard */,
+				759893D7268E8B41005F00AD /* AppDelegate.swift */,
 				759AC54F268E822300F76351 /* Assets.xcassets */,
 				759AC551268E822300F76351 /* LaunchScreen.storyboard */,
 				759AC554268E822300F76351 /* Info.plist */,
-				759AC54C268E822000F76351 /* WhatToWhatch.xcdatamodeld */,
 			);
 			path = WhatToWhatch;
 			sourceTree = "<group>";
@@ -77,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 759AC557268E822300F76351 /* Build configuration list for PBXNativeTarget "WhatToWhatch" */;
 			buildPhases = (
+				6ADFE64F629BAAE305F0A453 /* [CP] Check Pods Manifest.lock */,
 				759AC53C268E822000F76351 /* Sources */,
 				759AC53D268E822000F76351 /* Frameworks */,
 				759AC53E268E822000F76351 /* Resources */,
+				B222A0A74CE91C6B6CC490C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -101,6 +220,7 @@
 				TargetAttributes = {
 					759AC53F268E822000F76351 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -127,37 +247,86 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7572E1E82692BAA7006FDDAF /* CustomOverlayView.xib in Resources */,
+				759893E4268E8C86005F00AD /* LaunchScreen.storyboard in Resources */,
+				759893E6268E8C8A005F00AD /* Main.storyboard in Resources */,
+				759893E8268E8C8F005F00AD /* CustomView.xib in Resources */,
 				759AC553268E822300F76351 /* LaunchScreen.storyboard in Resources */,
+				759893F6268E9EC3005F00AD /* Montserrat-Medium.ttf in Resources */,
 				759AC550268E822300F76351 /* Assets.xcassets in Resources */,
-				759AC54B268E822000F76351 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6ADFE64F629BAAE305F0A453 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatToWhatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B222A0A74CE91C6B6CC490C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatToWhatch/Pods-WhatToWhatch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatToWhatch/Pods-WhatToWhatch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhatToWhatch/Pods-WhatToWhatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		759AC53C268E822000F76351 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				759AC548268E822000F76351 /* ViewController.swift in Sources */,
-				759AC544268E822000F76351 /* AppDelegate.swift in Sources */,
-				759AC546268E822000F76351 /* SceneDelegate.swift in Sources */,
-				759AC54E268E822000F76351 /* WhatToWhatch.xcdatamodeld in Sources */,
+				7572E1FE269657E0006FDDAF /* Checkbox.swift in Sources */,
+				759893D8268E8B41005F00AD /* AppDelegate.swift in Sources */,
+				759893F4268E934C005F00AD /* MainViewController.swift in Sources */,
+				7572E1F22694E1EE006FDDAF /* CustomOverlayView.swift in Sources */,
+				759893E0268E8C78005F00AD /* Similar.swift in Sources */,
+				759893EC268E8CA2005F00AD /* DataViewController.swift in Sources */,
+				7572E1F4269501E9006FDDAF /* MovieTableViewCell.swift in Sources */,
+				759893DE268E8C73005F00AD /* TinderCardModel.swift in Sources */,
+				759893F2268E8CEA005F00AD /* UIView+Extensions.swift in Sources */,
+				759893EA268E8C95005F00AD /* CustomView.swift in Sources */,
+				759893DC268E8C6C005F00AD /* NetworkManager.swift in Sources */,
+				759AC58E268E881900F76351 /* WhatToWhatch.xcdatamodeld in Sources */,
+				759893E2268E8C7E005F00AD /* Movie.swift in Sources */,
+				759893DA268E8C64005F00AD /* StorageManager.swift in Sources */,
+				759893F0268E8CAC005F00AD /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		759AC549268E822000F76351 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				759AC54A268E822000F76351 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		759AC551268E822300F76351 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,9 +456,11 @@
 		};
 		759AC558268E822300F76351 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DAED544211629304A8D5CA5 /* Pods-WhatToWhatch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G97R3KR773;
 				INFOPLIST_FILE = WhatToWhatch/Info.plist;
@@ -299,6 +470,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Markov.WhatToWhatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,9 +478,11 @@
 		};
 		759AC559268E822300F76351 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C3D4163F2404A0501ADDAD8 /* Pods-WhatToWhatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G97R3KR773;
 				INFOPLIST_FILE = WhatToWhatch/Info.plist;
@@ -347,12 +521,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		759AC54C268E822000F76351 /* WhatToWhatch.xcdatamodeld */ = {
+		759AC58C268E881900F76351 /* WhatToWhatch.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				759AC54D268E822000F76351 /* WhatToWhatch.xcdatamodel */,
+				759AC58D268E881900F76351 /* WhatToWhatch.xcdatamodel */,
 			);
-			currentVersion = 759AC54D268E822000F76351 /* WhatToWhatch.xcdatamodel */;
+			currentVersion = 759AC58D268E881900F76351 /* WhatToWhatch.xcdatamodel */;
 			path = WhatToWhatch.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

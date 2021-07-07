@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="muU-g2-fEM">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="WhatToWhatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWQ-Oh-PMn" customClass="LGButton" customModule="LGButton">
+                                <rect key="frame" x="157" y="634" width="100" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="TZY-BT-qwV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientStartColor">
+                                        <color key="value" systemColor="systemIndigoColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientEndColor">
+                                        <color key="value" systemColor="systemTealColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientRotation">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRoundedCorners" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemTealColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleString" value="Go"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                                        <real key="value" value="21"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleNumOfLines">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="verticalOrientation" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" name="AccentColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="searchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FRG-hI-qoK"/>
+                                </connections>
+                            </view>
+                            <view tag="14" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mUT-Fz-PXD" customClass="BEMCheckBox">
+                                <rect key="frame" x="263.33333333333331" y="79" width="45" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="36" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AdY-gh-YP3" customClass="BEMCheckBox">
+                                <rect key="frame" x="263.33333333333331" y="136" width="45" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="9648" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdg-at-kRp" customClass="BEMCheckBox">
+                                <rect key="frame" x="263.33333333333331" y="193" width="45" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="10749" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HOb-1m-TuK" customClass="BEMCheckBox">
+                                <rect key="frame" x="262.66666666666669" y="246" width="45" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="878" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="74T-Mz-6lC" customClass="BEMCheckBox">
+                                <rect key="frame" x="263.33333333333331" y="299" width="45" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="37" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wqM-ct-PWM" customClass="BEMCheckBox">
+                                <rect key="frame" x="263.33333333333331" y="421" width="45" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="27" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Bb-rN-X8a" customClass="BEMCheckBox">
+                                <rect key="frame" x="20" y="79" width="45" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="35" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tlf-Zx-ukj" customClass="BEMCheckBox">
+                                <rect key="frame" x="20" y="136" width="45" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="18" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z8R-OK-qyf" customClass="BEMCheckBox">
+                                <rect key="frame" x="20" y="193" width="45" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="53" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d9S-nr-ef2" customClass="BEMCheckBox">
+                                <rect key="frame" x="20" y="250" width="45" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="12" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KEX-fe-r8l" customClass="BEMCheckBox">
+                                <rect key="frame" x="20" y="307" width="45" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="28" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hVr-EN-Frv" customClass="BEMCheckBox">
+                                <rect key="frame" x="20" y="364" width="45" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="16" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Udl-pP-hvf" customClass="BEMCheckBox">
+                                <rect key="frame" x="20" y="421" width="45" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="80" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pdl-37-m37" customClass="BEMCheckBox">
+                                <rect key="frame" x="20" y="478" width="45" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="10751" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SpY-6q-r2J" customClass="BEMCheckBox">
+                                <rect key="frame" x="20" y="535" width="45" height="45"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="W2N-Nd-gbs">
+                                <rect key="frame" x="315.66666666666669" y="95" width="78.333333333333314" height="465"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fantasy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGZ-AN-SRa">
+                                        <rect key="frame" x="0.0" y="0.0" width="78.333333333333329" height="19.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5R-Pn-Ifd">
+                                        <rect key="frame" x="0.0" y="55.66666666666665" width="78.333333333333329" height="19.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mystery" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdk-ub-goR">
+                                        <rect key="frame" x="0.0" y="111.33333333333334" width="78.333333333333329" height="19.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Romance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4f-qa-KBx">
+                                        <rect key="frame" x="0.0" y="167" width="78.333333333333329" height="19.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ScienceF" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5x-Ut-Q34">
+                                        <rect key="frame" x="0.0" y="222.66666666666669" width="78.333333333333329" height="19.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="War" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yp5-7I-W0f">
+                                        <rect key="frame" x="0.0" y="278.33333333333331" width="78.333333333333329" height="19.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Western" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C03-Mz-Czb">
+                                        <rect key="frame" x="0.0" y="334" width="78.333333333333329" height="19.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFv-Ib-zeP">
+                                        <rect key="frame" x="0.0" y="389.66666666666669" width="78.333333333333329" height="19.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TV Movie" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGQ-gu-VnW">
+                                        <rect key="frame" x="0.0" y="445.33333333333337" width="78.333333333333329" height="19.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view tag="10752" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JNv-A5-mEP" customClass="BEMCheckBox">
+                                <rect key="frame" x="263.33333333333331" y="361" width="45" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="10402" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fkY-BV-HLB" customClass="BEMCheckBox">
+                                <rect key="frame" x="263.33333333333331" y="478" width="45" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view tag="10770" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n2D-87-MsV" customClass="BEMCheckBox">
+                                <rect key="frame" x="263.33333333333331" y="535" width="45" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" systemColor="labelColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="gcG-mc-lRs">
+                                <rect key="frame" x="80" y="95" width="86" height="465"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horror" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRP-iu-7l6">
+                                        <rect key="frame" x="0.0" y="0.0" width="53" height="19.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comedy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9g3-IT-QYl">
+                                        <rect key="frame" x="0.0" y="55.66666666666665" width="68" height="19.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drama" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPl-hK-u7y">
+                                        <rect key="frame" x="0.0" y="111.33333333333334" width="56" height="19.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thriller" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkC-ux-KFC">
+                                        <rect key="frame" x="0.0" y="167" width="56.666666666666664" height="19.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adventure" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbq-ts-JBs">
+                                        <rect key="frame" x="0.0" y="222.66666666666669" width="85.666666666666671" height="19.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xh-Rf-Gpb">
+                                        <rect key="frame" x="0.0" y="278.33333333333331" width="53.333333333333336" height="19.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8Y-af-HNG">
+                                        <rect key="frame" x="0.0" y="334" width="86" height="19.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crime" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nc-8X-80m">
+                                        <rect key="frame" x="0.0" y="389.66666666666669" width="49.333333333333336" height="19.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Family" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaR-1r-Lvi">
+                                        <rect key="frame" x="0.0" y="445.33333333333337" width="54.333333333333336" height="19.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JNv-A5-mEP" firstAttribute="top" secondItem="74T-Mz-6lC" secondAttribute="bottom" constant="17" id="09x-nf-4S0"/>
+                            <constraint firstItem="hVr-EN-Frv" firstAttribute="width" secondItem="Udl-pP-hvf" secondAttribute="width" id="0I0-7d-BPo"/>
+                            <constraint firstItem="d9S-nr-ef2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2uI-Ih-GdC"/>
+                            <constraint firstItem="kdg-at-kRp" firstAttribute="top" secondItem="AdY-gh-YP3" secondAttribute="bottom" constant="12" id="38N-q7-OMZ"/>
+                            <constraint firstItem="d9S-nr-ef2" firstAttribute="top" secondItem="z8R-OK-qyf" secondAttribute="bottom" constant="12" id="4Dl-Gb-y5d"/>
+                            <constraint firstItem="Tlf-Zx-ukj" firstAttribute="height" secondItem="z8R-OK-qyf" secondAttribute="height" id="4Ux-p0-mGX"/>
+                            <constraint firstItem="Tlf-Zx-ukj" firstAttribute="top" secondItem="5Bb-rN-X8a" secondAttribute="bottom" constant="12" id="5DG-r4-l6l"/>
+                            <constraint firstItem="hVr-EN-Frv" firstAttribute="height" secondItem="Udl-pP-hvf" secondAttribute="height" id="5Ub-Uz-spE"/>
+                            <constraint firstItem="W2N-Nd-gbs" firstAttribute="leading" secondItem="wqM-ct-PWM" secondAttribute="trailing" constant="17" id="6mX-QP-me3"/>
+                            <constraint firstItem="n2D-87-MsV" firstAttribute="top" secondItem="fkY-BV-HLB" secondAttribute="bottom" constant="12" id="7f9-7y-0QY"/>
+                            <constraint firstItem="hVr-EN-Frv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8Oq-j0-Ebs"/>
+                            <constraint firstItem="W2N-Nd-gbs" firstAttribute="leading" secondItem="kdg-at-kRp" secondAttribute="trailing" constant="17" id="9xe-eK-rTh"/>
+                            <constraint firstItem="gcG-mc-lRs" firstAttribute="leading" secondItem="5Bb-rN-X8a" secondAttribute="trailing" constant="15" id="AcA-vu-Uf7"/>
+                            <constraint firstItem="5Bb-rN-X8a" firstAttribute="height" secondItem="Tlf-Zx-ukj" secondAttribute="height" id="AgL-mO-MAx"/>
+                            <constraint firstItem="JNv-A5-mEP" firstAttribute="height" secondItem="wqM-ct-PWM" secondAttribute="height" id="AxF-wz-kx1"/>
+                            <constraint firstItem="W2N-Nd-gbs" firstAttribute="leading" secondItem="fkY-BV-HLB" secondAttribute="trailing" constant="17" id="ECh-Hx-fDJ"/>
+                            <constraint firstItem="SpY-6q-r2J" firstAttribute="top" secondItem="Pdl-37-m37" secondAttribute="bottom" constant="12" id="ECw-ef-HdJ"/>
+                            <constraint firstItem="W2N-Nd-gbs" firstAttribute="leading" secondItem="n2D-87-MsV" secondAttribute="trailing" constant="17" id="EiA-J7-7Al"/>
+                            <constraint firstItem="JNv-A5-mEP" firstAttribute="width" secondItem="wqM-ct-PWM" secondAttribute="width" id="Elx-q1-H4I"/>
+                            <constraint firstItem="SpY-6q-r2J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FGZ-y2-ra5"/>
+                            <constraint firstItem="mUT-Fz-PXD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="GTK-RB-aWT"/>
+                            <constraint firstItem="W2N-Nd-gbs" firstAttribute="leading" secondItem="mUT-Fz-PXD" secondAttribute="trailing" constant="17" id="GcU-eb-CTg"/>
+                            <constraint firstItem="W2N-Nd-gbs" firstAttribute="leading" secondItem="JNv-A5-mEP" secondAttribute="trailing" constant="17" id="GdY-Qm-4es"/>
+                            <constraint firstItem="fkY-BV-HLB" firstAttribute="top" secondItem="wqM-ct-PWM" secondAttribute="bottom" constant="12" id="Gr8-tQ-83q"/>
+                            <constraint firstItem="5Bb-rN-X8a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="J1H-tn-moV"/>
+                            <constraint firstItem="wqM-ct-PWM" firstAttribute="top" secondItem="JNv-A5-mEP" secondAttribute="bottom" constant="15" id="KSY-iI-Ba4"/>
+                            <constraint firstItem="gcG-mc-lRs" firstAttribute="leading" secondItem="hVr-EN-Frv" secondAttribute="trailing" constant="15" id="LmS-Au-EDP"/>
+                            <constraint firstItem="Pdl-37-m37" firstAttribute="top" secondItem="Udl-pP-hvf" secondAttribute="bottom" constant="12" id="MLG-8u-Bi6"/>
+                            <constraint firstItem="W2N-Nd-gbs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="Mn8-Pd-vg3"/>
+                            <constraint firstItem="W2N-Nd-gbs" firstAttribute="leading" secondItem="HOb-1m-TuK" secondAttribute="trailing" constant="17.666666666666686" id="MsE-Q7-AhK"/>
+                            <constraint firstItem="W2N-Nd-gbs" firstAttribute="leading" secondItem="AdY-gh-YP3" secondAttribute="trailing" constant="17" id="NPO-iL-clA"/>
+                            <constraint firstItem="hVr-EN-Frv" firstAttribute="top" secondItem="KEX-fe-r8l" secondAttribute="bottom" constant="12" id="PMh-F7-oKa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TWQ-Oh-PMn" secondAttribute="bottom" constant="13" id="PRh-Dy-vxW"/>
+                            <constraint firstItem="gcG-mc-lRs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="Q3y-c1-GY1"/>
+                            <constraint firstItem="gcG-mc-lRs" firstAttribute="leading" secondItem="Pdl-37-m37" secondAttribute="trailing" constant="15" id="SW9-OB-fjy"/>
+                            <constraint firstItem="Udl-pP-hvf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="T0O-91-jUv"/>
+                            <constraint firstItem="Pdl-37-m37" firstAttribute="height" secondItem="SpY-6q-r2J" secondAttribute="height" id="U5k-46-pfI"/>
+                            <constraint firstItem="gcG-mc-lRs" firstAttribute="leading" secondItem="Udl-pP-hvf" secondAttribute="trailing" constant="15" id="WOq-Sw-7dy"/>
+                            <constraint firstItem="HOb-1m-TuK" firstAttribute="top" secondItem="kdg-at-kRp" secondAttribute="bottom" constant="8" symbolic="YES" id="WeL-Lw-go3"/>
+                            <constraint firstItem="74T-Mz-6lC" firstAttribute="top" secondItem="HOb-1m-TuK" secondAttribute="bottom" constant="8" symbolic="YES" id="XIT-OK-Qg9"/>
+                            <constraint firstItem="mUT-Fz-PXD" firstAttribute="width" secondItem="AdY-gh-YP3" secondAttribute="width" id="aV3-Wf-6gd"/>
+                            <constraint firstItem="AdY-gh-YP3" firstAttribute="width" secondItem="kdg-at-kRp" secondAttribute="width" id="aYV-uL-AKb"/>
+                            <constraint firstItem="gcG-mc-lRs" firstAttribute="leading" secondItem="KEX-fe-r8l" secondAttribute="trailing" constant="15" id="b4e-KI-Czx"/>
+                            <constraint firstItem="KEX-fe-r8l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="d1a-lB-VNm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W2N-Nd-gbs" secondAttribute="trailing" constant="20" id="dKw-wT-Ikd"/>
+                            <constraint firstItem="Pdl-37-m37" firstAttribute="width" secondItem="SpY-6q-r2J" secondAttribute="width" id="dgA-bp-97s"/>
+                            <constraint firstItem="gcG-mc-lRs" firstAttribute="leading" secondItem="Tlf-Zx-ukj" secondAttribute="trailing" constant="15" id="e1n-KM-xxD"/>
+                            <constraint firstItem="d9S-nr-ef2" firstAttribute="width" secondItem="KEX-fe-r8l" secondAttribute="width" id="eQs-30-rTX"/>
+                            <constraint firstItem="wqM-ct-PWM" firstAttribute="width" secondItem="fkY-BV-HLB" secondAttribute="width" id="ecw-C7-K0o"/>
+                            <constraint firstItem="Udl-pP-hvf" firstAttribute="top" secondItem="hVr-EN-Frv" secondAttribute="bottom" constant="12" id="ewk-nk-0AY"/>
+                            <constraint firstItem="5Bb-rN-X8a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="ks2-gw-bAg"/>
+                            <constraint firstItem="AdY-gh-YP3" firstAttribute="height" secondItem="kdg-at-kRp" secondAttribute="height" id="kts-gG-6pp"/>
+                            <constraint firstItem="Pdl-37-m37" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kux-r9-yha"/>
+                            <constraint firstItem="AdY-gh-YP3" firstAttribute="top" secondItem="mUT-Fz-PXD" secondAttribute="bottom" constant="12" id="lsW-Wf-HKc"/>
+                            <constraint firstItem="wqM-ct-PWM" firstAttribute="height" secondItem="fkY-BV-HLB" secondAttribute="height" id="m9z-FO-dVN"/>
+                            <constraint firstItem="z8R-OK-qyf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mwL-8j-bhQ"/>
+                            <constraint firstItem="gcG-mc-lRs" firstAttribute="leading" secondItem="z8R-OK-qyf" secondAttribute="trailing" constant="15" id="njc-rq-Rfs"/>
+                            <constraint firstItem="KEX-fe-r8l" firstAttribute="top" secondItem="d9S-nr-ef2" secondAttribute="bottom" constant="12" id="ofn-XK-qag"/>
+                            <constraint firstItem="z8R-OK-qyf" firstAttribute="top" secondItem="Tlf-Zx-ukj" secondAttribute="bottom" constant="12" id="olM-IO-uER"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TWQ-Oh-PMn" secondAttribute="trailing" constant="157" id="pLV-XN-HsY"/>
+                            <constraint firstItem="gcG-mc-lRs" firstAttribute="leading" secondItem="d9S-nr-ef2" secondAttribute="trailing" constant="15" id="pVh-Fl-hao"/>
+                            <constraint firstItem="fkY-BV-HLB" firstAttribute="height" secondItem="n2D-87-MsV" secondAttribute="height" id="pat-gg-SIa"/>
+                            <constraint firstItem="Tlf-Zx-ukj" firstAttribute="width" secondItem="z8R-OK-qyf" secondAttribute="width" id="qba-LY-DZl"/>
+                            <constraint firstItem="mUT-Fz-PXD" firstAttribute="height" secondItem="AdY-gh-YP3" secondAttribute="height" id="rbj-PL-Ksa"/>
+                            <constraint firstItem="W2N-Nd-gbs" firstAttribute="leading" secondItem="74T-Mz-6lC" secondAttribute="trailing" constant="17" id="roO-ly-CEz"/>
+                            <constraint firstItem="5Bb-rN-X8a" firstAttribute="width" secondItem="Tlf-Zx-ukj" secondAttribute="width" id="roZ-0p-CP2"/>
+                            <constraint firstItem="Tlf-Zx-ukj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sTr-ga-Css"/>
+                            <constraint firstItem="74T-Mz-6lC" firstAttribute="width" secondItem="JNv-A5-mEP" secondAttribute="width" id="tOi-nh-QfY"/>
+                            <constraint firstItem="fkY-BV-HLB" firstAttribute="width" secondItem="n2D-87-MsV" secondAttribute="width" id="vJ2-UF-cSs"/>
+                            <constraint firstItem="kdg-at-kRp" firstAttribute="height" secondItem="HOb-1m-TuK" secondAttribute="height" id="vd5-0d-Up7"/>
+                            <constraint firstItem="74T-Mz-6lC" firstAttribute="height" secondItem="JNv-A5-mEP" secondAttribute="height" id="veZ-Zf-cYx"/>
+                            <constraint firstItem="TWQ-Oh-PMn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="wFI-Lt-Dz5"/>
+                            <constraint firstItem="gcG-mc-lRs" firstAttribute="leading" secondItem="SpY-6q-r2J" secondAttribute="trailing" constant="15" id="wMs-JO-CVn"/>
+                            <constraint firstItem="d9S-nr-ef2" firstAttribute="height" secondItem="KEX-fe-r8l" secondAttribute="height" id="yCC-XY-Iig"/>
+                            <constraint firstItem="kdg-at-kRp" firstAttribute="width" secondItem="HOb-1m-TuK" secondAttribute="width" id="yek-M9-fgI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="w7h-EF-Wr4"/>
+                    <connections>
+                        <outlet property="actionCheckBox" destination="hVr-EN-Frv" id="kXb-Y9-rXu"/>
+                        <outlet property="adventureCheckBox" destination="KEX-fe-r8l" id="cx7-sP-Xzh"/>
+                        <outlet property="animationCheckBox" destination="Udl-pP-hvf" id="so1-fy-b21"/>
+                        <outlet property="comedyCheckBox" destination="Tlf-Zx-ukj" id="sHt-hl-SCJ"/>
+                        <outlet property="crimeCheckBox" destination="Pdl-37-m37" id="cqW-5f-pWB"/>
+                        <outlet property="dramaCheckBox" destination="z8R-OK-qyf" id="amB-jm-AOW"/>
+                        <outlet property="familyCheckBox" destination="SpY-6q-r2J" id="FKC-9S-uo5"/>
+                        <outlet property="fantasyCheckBox" destination="mUT-Fz-PXD" id="sTK-vq-tct"/>
+                        <outlet property="historyCheckBox" destination="AdY-gh-YP3" id="reJ-g3-tZu"/>
+                        <outlet property="horrorCheckBox" destination="5Bb-rN-X8a" id="Zc8-PH-ASX"/>
+                        <outlet property="musicCheckBox" destination="fkY-BV-HLB" id="hsh-PL-UBy"/>
+                        <outlet property="mysteryCheckBox" destination="kdg-at-kRp" id="waj-nM-b6P"/>
+                        <outlet property="romanceCheckBox" destination="HOb-1m-TuK" id="MIA-8R-lkh"/>
+                        <outlet property="sciencefCheckBox" destination="74T-Mz-6lC" id="nOg-1g-mRz"/>
+                        <outlet property="thrillerCheckBox" destination="d9S-nr-ef2" id="OV0-Om-1zO"/>
+                        <outlet property="tvmovieCheckBox" destination="n2D-87-MsV" id="1lv-Z0-qRk"/>
+                        <outlet property="warCheckBox" destination="JNv-A5-mEP" id="9ZH-WA-Nvp"/>
+                        <outlet property="westernCheckBox" destination="wqM-ct-PWM" id="2xw-Uj-gum"/>
+                        <segue destination="o84-wu-GRq" kind="show" identifier="segueShowNavigation" id="21r-t6-vmM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3205.7971014492755" y="69.293478260869577"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="FfQ-41-6cL">
+            <objects>
+                <viewController id="o84-wu-GRq" customClass="ResultViewController" customModule="WhatToWhatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XMW-CO-soS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRQ-VI-I7R" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="0.0" y="44" width="414" height="643"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nz9-73-beS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oRQ-VI-I7R" firstAttribute="bottom" secondItem="nz9-73-beS" secondAttribute="bottom" id="99t-fB-7e4"/>
+                            <constraint firstItem="oRQ-VI-I7R" firstAttribute="leading" secondItem="nz9-73-beS" secondAttribute="leading" id="FpG-Cd-FKT"/>
+                            <constraint firstItem="oRQ-VI-I7R" firstAttribute="trailing" secondItem="nz9-73-beS" secondAttribute="trailing" id="LdZ-oH-Iwf"/>
+                            <constraint firstItem="oRQ-VI-I7R" firstAttribute="top" secondItem="nz9-73-beS" secondAttribute="top" id="XtH-V8-d1n"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5MO-QC-N5q"/>
+                    <connections>
+                        <outlet property="kolodaView" destination="oRQ-VI-I7R" id="utv-4b-ykw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JfX-dO-j7L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3902.898550724638" y="69.293478260869577"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c3D-hg-WUy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dxH-Pj-pbX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="search" id="Uz7-WZ-CUh"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vhn-gg-nyK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Kgt-CA-Bpp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cPg-3P-32j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2268" y="69.715142428785612"/>
+        </scene>
+        <!--Added movies-->
+        <scene sceneID="aTh-m8-2yA">
+            <objects>
+                <tableViewController id="kAr-uM-ihd" customClass="DataViewController" customModule="WhatToWhatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vfm-xr-Sdr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="100" id="bPp-fK-hrv" customClass="MovieTableViewCell" customModule="WhatToWhatch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bPp-fK-hrv" id="BoQ-GX-T82">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HrB-jf-Ss7">
+                                            <rect key="frame" x="131" y="11" width="210" height="22"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bct-Wq-0GB">
+                                            <rect key="frame" x="131" y="59" width="44" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L9c-L9-oQy">
+                                            <rect key="frame" x="9" y="11" width="114" height="79"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="114" id="mR4-Ld-4ho"/>
+                                            </constraints>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvj-jp-97U">
+                                            <rect key="frame" x="373.66666666666669" y="59" width="20.333333333333314" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="JuQ-at-c5d"/>
+                                                <constraint firstAttribute="width" constant="20.333333333333314" id="oKh-8p-a3g"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <state key="normal" image="heart" catalog="system"/>
+                                            <connections>
+                                                <action selector="likeButton:" destination="bPp-fK-hrv" eventType="touchUpInside" id="y6I-SJ-3Xw"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="bct-Wq-0GB" firstAttribute="top" secondItem="HrB-jf-Ss7" secondAttribute="bottom" constant="26" id="0GF-xs-24g"/>
+                                        <constraint firstAttribute="bottom" secondItem="fvj-jp-97U" secondAttribute="bottom" constant="17" id="HLT-Gl-qqk"/>
+                                        <constraint firstItem="L9c-L9-oQy" firstAttribute="leading" secondItem="BoQ-GX-T82" secondAttribute="leading" constant="9" id="HLg-Hs-R3O"/>
+                                        <constraint firstAttribute="trailing" secondItem="HrB-jf-Ss7" secondAttribute="trailing" constant="73" id="JtG-JT-hVh"/>
+                                        <constraint firstItem="fvj-jp-97U" firstAttribute="top" secondItem="BoQ-GX-T82" secondAttribute="top" constant="59" id="Jua-rB-s8n"/>
+                                        <constraint firstItem="bct-Wq-0GB" firstAttribute="leading" secondItem="L9c-L9-oQy" secondAttribute="trailing" constant="8" symbolic="YES" id="MfA-rc-abd"/>
+                                        <constraint firstItem="HrB-jf-Ss7" firstAttribute="leading" secondItem="L9c-L9-oQy" secondAttribute="trailing" constant="8" symbolic="YES" id="SFD-uR-1Qv"/>
+                                        <constraint firstAttribute="bottom" secondItem="L9c-L9-oQy" secondAttribute="bottom" constant="10" id="cXD-kl-yGc"/>
+                                        <constraint firstAttribute="trailing" secondItem="fvj-jp-97U" secondAttribute="trailing" constant="20" symbolic="YES" id="iBF-Mv-Vie"/>
+                                        <constraint firstItem="L9c-L9-oQy" firstAttribute="top" secondItem="BoQ-GX-T82" secondAttribute="top" constant="11" id="oOZ-KK-gZW"/>
+                                        <constraint firstItem="HrB-jf-Ss7" firstAttribute="top" secondItem="BoQ-GX-T82" secondAttribute="top" constant="11" id="tOV-hJ-edm"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="customImageView" destination="L9c-L9-oQy" id="wSV-si-aq7"/>
+                                    <outlet property="likeOutlet" destination="fvj-jp-97U" id="jem-9d-cZn"/>
+                                    <outlet property="ratingLabel" destination="bct-Wq-0GB" id="3TT-Xx-7tp"/>
+                                    <outlet property="titleLabel" destination="HrB-jf-Ss7" id="tmy-1z-JWB"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kAr-uM-ihd" id="Fk2-h1-u2H"/>
+                            <outlet property="delegate" destination="kAr-uM-ihd" id="RgC-ha-wqm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Added movies" largeTitleDisplayMode="always" id="UMU-P7-5I3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="cln-9h-C29">
+                            <connections>
+                                <action selector="refreshButton:" destination="kAr-uM-ihd" id="hCn-MF-rUi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aWW-Rc-JeA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3901.449275362319" y="859.23913043478262"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gcz-V9-hj6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vMs-GT-Jy9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="downloads" id="qBp-7c-Rdc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Pjv-Z6-8tZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kAr-uM-ihd" kind="relationship" relationship="rootViewController" id="CTW-0v-5oh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tTa-Fc-AFG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2916" y="768.66566716641682"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tMb-WD-Ud5">
+            <objects>
+                <tabBarController storyboardIdentifier="tabbar" automaticallyAdjustsScrollViewInsets="NO" id="muU-g2-fEM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yoQ-qG-hPB">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dxH-Pj-pbX" kind="relationship" relationship="viewControllers" id="NWe-0g-Zhh"/>
+                        <segue destination="vMs-GT-Jy9" kind="relationship" relationship="viewControllers" id="pEN-O2-HyU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ps2-tw-30Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1328.8" y="418.74062968515744"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
