@@ -1,0 +1,28 @@
+PODS:
+  - BEMCheckBox (1.4.1)
+  - Koloda (5.0.1):
+    - pop (~> 1.0)
+  - LGButton (1.1.6)
+  - pop (1.0.12)
+
+DEPENDENCIES:
+  - BEMCheckBox
+  - Koloda
+  - LGButton
+
+SPEC REPOS:
+  trunk:
+    - BEMCheckBox
+    - Koloda
+    - LGButton
+    - pop
+
+SPEC CHECKSUMS:
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
+  Koloda: d07b9199a383abc5898b62aa945a599f5e7c0c4b
+  LGButton: 9f0a7f9d3030e3f504108342f6b66d64a429371b
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+
+PODFILE CHECKSUM: fe1b16877d2eb92778113363dc302d3453f4b5c7
+
+COCOAPODS: 1.10.0
