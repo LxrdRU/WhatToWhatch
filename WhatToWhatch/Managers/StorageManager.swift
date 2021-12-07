@@ -42,9 +42,10 @@ class StorageManager {
     }
     
     // Save data
-    func save( image: UIImage, rating: Double, title: String, releaseDate: String , imageUrl:URL, like:Bool) {
+    func save(id: Int, image: UIImage, rating: Double, title: String, releaseDate: String , imageUrl:URL, like:Bool) {
         guard let entityDescription = NSEntityDescription.entity(forEntityName: "TinderCard", in: persistentContainer.viewContext) else { return }
         let card = NSManagedObject(entity: entityDescription, insertInto: viewContext) as! TinderCard
+        card.id = Int64(id)
         card.image = image.pngData()
         card.rating = rating
         card.title = title

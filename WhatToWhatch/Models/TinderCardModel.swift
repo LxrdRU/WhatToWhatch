@@ -12,4 +12,5 @@ struct TinderCardModel {
   let imageUrl: URL
   let rating: Double
   let releaseDate: String
+  let id:Int
 }

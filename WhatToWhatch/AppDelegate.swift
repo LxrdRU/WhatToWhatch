@@ -20,6 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
         let viewcontroller = storyboard.instantiateViewController(withIdentifier: "tabbar") as! UITabBarController
         window?.rootViewController = viewcontroller
+        if #available(iOS 13.0, *) {
+            let statusBar = UIView(frame: UIApplication.shared.keyWindow?.windowScene?.statusBarManager?.statusBarFrame ?? CGRect.zero)
+            statusBar.backgroundColor = ApplicationScheme.shared.colorScheme.primaryColor
+             UIApplication.shared.keyWindow?.addSubview(statusBar)
+        } else {
+            UIApplication.shared.statusBarView?.backgroundColor = ApplicationScheme.shared.colorScheme.primaryColor
+        }
         
         return true
     }
@@ -91,6 +98,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            }
 //        }
 //    }
+
+}
+extension UIApplication {
+
+    var statusBarView: UIView? {
+        return value(forKey: "statusBar") as? UIView
+    }
 
 }
 

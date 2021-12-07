@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import MaterialComponents
 class DataViewController: UITableViewController {
     var models = StorageManager.shared.fetchData()
     {didSet {
@@ -17,8 +17,11 @@ class DataViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        prepareVC()
+    
     }
 
+    
     @IBAction func refreshButton(_ sender: UIBarButtonItem) {
         models = StorageManager.shared.fetchData()
         tableView.reloadData()
@@ -31,10 +34,18 @@ class DataViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! MovieTableViewCell
-
+        
         let model = models[indexPath.row]
         cell.delegate = self
         cell.likeOutlet.tag = indexPath.row
+        cell.contentView.backgroundColor = ApplicationScheme.shared.colorScheme.secondaryColor
+        cell.ratingLabel.textColor = ApplicationScheme.shared.colorScheme.onSurfaceColor
+        cell.titleLabel.textColor = ApplicationScheme.shared.colorScheme.onSurfaceColor
+
+    
+        cell.ratingLabel.font = ApplicationScheme.shared.typographyScheme.subtitle1
+        
+        
         if(model.like == true){
             cell.likeOutlet.setImage(UIImage(systemName: "heart.fill"), for: UIControl.State.normal)
         }else{
@@ -59,6 +70,22 @@ class DataViewController: UITableViewController {
             StorageManager.shared.delete(model)
         }
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let model = models[indexPath.row]
+        tableView.deselectRow(at: indexPath, animated: true)
+        self.performSegue(withIdentifier: "detailMovieIdentifier", sender: model)
+            
+    }
+  
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailMovieIdentifier"{
+            let detailMovieViewController = segue.destination as? DetailMovieViewController
+            detailMovieViewController?.model = sender as? TinderCard
+        }
+    }
+  
+    
 }
 extension DataViewController: MovieTableViewCellDelegate{
     func likeButton(tag: Int) {
@@ -71,5 +98,24 @@ extension DataViewController: MovieTableViewCellDelegate{
             tableView.reloadData()
            }
     }
+}
+extension DataViewController{
+    func prepareVC() {
+        
+        self.view.tintColor = .red
+        tableView.backgroundColor = ApplicationScheme.shared.colorScheme.secondaryColor
+
+        
+//
+        navigationController?.navigationBar.barTintColor = ApplicationScheme.shared.colorScheme.secondaryColor
+    
+
+        
+        
+        
+        
+      
+    }
+ 
 }
 

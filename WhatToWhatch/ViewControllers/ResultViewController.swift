@@ -10,7 +10,6 @@ import Koloda
 
 class ResultViewController: UIViewController {
     @IBOutlet open weak var kolodaView: KolodaView!
-    var backgroundImage: UIImageView!
     
     var images = [Int:UIImage]()
     {didSet {
@@ -36,9 +35,7 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
         kolodaView.dataSource = self
         kolodaView.delegate = self
-        self.backgroundImage = UIImageView(image: UIImage(named: "bg"))
-        self.backgroundImage.contentMode = .scaleAspectFill
-        self.view.insertSubview(self.backgroundImage, at: 0)
+        
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -52,8 +49,6 @@ class ResultViewController: UIViewController {
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-
-        self.backgroundImage.frame = self.view.bounds
     }
     
 }
@@ -80,7 +75,7 @@ extension ResultViewController: KolodaViewDelegate{
     
     func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
         if (direction == .right){
-            StorageManager.shared.save(image: images[index]!, rating: models[index].rating, title: models[index].title, releaseDate: models[index].releaseDate, imageUrl: models[index].imageUrl,like: false)
+            StorageManager.shared.save(id: models[index].id,image: images[index]!, rating: models[index].rating, title: models[index].title, releaseDate: models[index].releaseDate, imageUrl: models[index].imageUrl,like: false)
         }
     }
 }
@@ -97,15 +92,14 @@ extension ResultViewController:KolodaViewDataSource{
       func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         let view = Bundle.main.loadNibNamed("CustomView", owner: self, options: nil)?[0] as? CustomView
         view?.customImageView.image = images[index]
-        view?.customTitleLabel.text = models[index].title + "( Year:" + models[index].releaseDate + " )"
+        view?.customTitleLabel.text = models[index].title
         view?.customRatingLabel.text = "Rating:" + String(models[index].rating)
-        view?.customYearLabel.text = models[index].title + "( Year:" + models[index].releaseDate + " )"
-        view?.bgImageView.image = UIImage(named: "bg-main")
-        view?.bgImageView.contentMode = .scaleAspectFill
-        view?.bgImageView.frame = view!.bounds
+        view?.customYearLabel.text = " Year:" + models[index].releaseDate
         view?.customImageView.contentMode = .scaleAspectFill
         view?.customImageView.frame.size.width = view!.bounds.size.width
         view?.sendSubviewToBack((view?.subviews.last)!)
+        navigationController?.navigationBar.backgroundColor = ApplicationScheme.shared.colorScheme.secondaryColor
+        view?.backgroundColor = ApplicationScheme.shared.colorScheme.backgroundColor
         return view!
       }
 

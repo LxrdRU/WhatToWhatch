@@ -12,11 +12,12 @@
 		7572E1F4269501E9006FDDAF /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572E1F3269501E8006FDDAF /* MovieTableViewCell.swift */; };
 		7572E1FE269657E0006FDDAF /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7572E1FD269657E0006FDDAF /* Checkbox.swift */; };
 		7572E20126966B55006FDDAF /* check.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7572E20026966B54006FDDAF /* check.gif */; };
+		757BEC2126A10EC900372226 /* DetailMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BEC2026A10EC900372226 /* DetailMovieViewController.swift */; };
+		758C31F626A132ED008915BA /* MoviesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758C31F526A132ED008915BA /* MoviesCollectionViewCell.swift */; };
 		759893D8268E8B41005F00AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759893D7268E8B41005F00AD /* AppDelegate.swift */; };
 		759893DA268E8C64005F00AD /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759893D9268E8C64005F00AD /* StorageManager.swift */; };
 		759893DC268E8C6C005F00AD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759893DB268E8C6C005F00AD /* NetworkManager.swift */; };
 		759893DE268E8C73005F00AD /* TinderCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759893DD268E8C73005F00AD /* TinderCardModel.swift */; };
-		759893E0268E8C78005F00AD /* Similar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759893DF268E8C78005F00AD /* Similar.swift */; };
 		759893E2268E8C7E005F00AD /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759893E1268E8C7E005F00AD /* Movie.swift */; };
 		759893E4268E8C86005F00AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759893E3268E8C85005F00AD /* LaunchScreen.storyboard */; };
 		759893E6268E8C8A005F00AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759893E5268E8C89005F00AD /* Main.storyboard */; };
@@ -30,6 +31,13 @@
 		759AC550268E822300F76351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759AC54F268E822300F76351 /* Assets.xcassets */; };
 		759AC553268E822300F76351 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759AC551268E822300F76351 /* LaunchScreen.storyboard */; };
 		759AC58E268E881900F76351 /* WhatToWhatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 759AC58C268E881900F76351 /* WhatToWhatch.xcdatamodeld */; };
+		75B27CBE275C5A1D0035B1C4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B27CBD275C5A1D0035B1C4 /* Constants.swift */; };
+		75B27CC1275D94690035B1C4 /* Applicationscheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B27CC0275D94690035B1C4 /* Applicationscheme.swift */; };
+		75B27CE7275D9B620035B1C4 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75B27CE4275D9B620035B1C4 /* Rubik-Medium.ttf */; };
+		75B27CE8275D9B620035B1C4 /* Rubik-OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 75B27CE5275D9B620035B1C4 /* Rubik-OFL.txt */; };
+		75B27CE9275D9B620035B1C4 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75B27CE6275D9B620035B1C4 /* Rubik-Regular.ttf */; };
+		75D6A61326B5DDD6008D49E5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D6A61226B5DDD5008D49E5 /* UIColor.swift */; };
+		75ED63E626A1466100E430A2 /* Similar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ED63E526A1466100E430A2 /* Similar.swift */; };
 		7AB83DC341BABE538186BCF0 /* Pods_WhatToWhatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E196B96E27BBBA2F99A28F99 /* Pods_WhatToWhatch.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,11 +49,12 @@
 		7572E1F3269501E8006FDDAF /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		7572E1FD269657E0006FDDAF /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 		7572E20026966B54006FDDAF /* check.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = check.gif; sourceTree = "<group>"; };
+		757BEC2026A10EC900372226 /* DetailMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieViewController.swift; sourceTree = "<group>"; };
+		758C31F526A132ED008915BA /* MoviesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesCollectionViewCell.swift; sourceTree = "<group>"; };
 		759893D7268E8B41005F00AD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		759893D9268E8C64005F00AD /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		759893DB268E8C6C005F00AD /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		759893DD268E8C73005F00AD /* TinderCardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderCardModel.swift; sourceTree = "<group>"; };
-		759893DF268E8C78005F00AD /* Similar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Similar.swift; sourceTree = "<group>"; };
 		759893E1268E8C7E005F00AD /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		759893E3268E8C85005F00AD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		759893E5268E8C89005F00AD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +70,13 @@
 		759AC552268E822300F76351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		759AC554268E822300F76351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		759AC58D268E881900F76351 /* WhatToWhatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhatToWhatch.xcdatamodel; sourceTree = "<group>"; };
+		75B27CBD275C5A1D0035B1C4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		75B27CC0275D94690035B1C4 /* Applicationscheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applicationscheme.swift; sourceTree = "<group>"; };
+		75B27CE4275D9B620035B1C4 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		75B27CE5275D9B620035B1C4 /* Rubik-OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Rubik-OFL.txt"; sourceTree = "<group>"; };
+		75B27CE6275D9B620035B1C4 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		75D6A61226B5DDD5008D49E5 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		75ED63E526A1466100E430A2 /* Similar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Similar.swift; sourceTree = "<group>"; };
 		E196B96E27BBBA2F99A28F99 /* Pods_WhatToWhatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWhatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -108,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				759893F3268E934C005F00AD /* MainViewController.swift */,
+				757BEC2026A10EC900372226 /* DetailMovieViewController.swift */,
 				759893EB268E8CA2005F00AD /* DataViewController.swift */,
 				759893EF268E8CAC005F00AD /* ResultViewController.swift */,
 			);
@@ -119,6 +136,8 @@
 			children = (
 				759893D9268E8C64005F00AD /* StorageManager.swift */,
 				759893DB268E8C6C005F00AD /* NetworkManager.swift */,
+				75B27CBD275C5A1D0035B1C4 /* Constants.swift */,
+				75B27CC0275D94690035B1C4 /* Applicationscheme.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -126,7 +145,7 @@
 		7572E1F92696575F006FDDAF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				759893DF268E8C78005F00AD /* Similar.swift */,
+				75ED63E526A1466100E430A2 /* Similar.swift */,
 				759893E1268E8C7E005F00AD /* Movie.swift */,
 				759893DD268E8C73005F00AD /* TinderCardModel.swift */,
 				759AC58C268E881900F76351 /* WhatToWhatch.xcdatamodeld */,
@@ -138,6 +157,9 @@
 			isa = PBXGroup;
 			children = (
 				759893F5268E9EC2005F00AD /* Montserrat-Medium.ttf */,
+				75B27CE4275D9B620035B1C4 /* Rubik-Medium.ttf */,
+				75B27CE5275D9B620035B1C4 /* Rubik-OFL.txt */,
+				75B27CE6275D9B620035B1C4 /* Rubik-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -146,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				7572E1F3269501E8006FDDAF /* MovieTableViewCell.swift */,
+				758C31F526A132ED008915BA /* MoviesCollectionViewCell.swift */,
+				75D6A61226B5DDD5008D49E5 /* UIColor.swift */,
 				759893F1268E8CEA005F00AD /* UIView+Extensions.swift */,
 				7572E1FD269657E0006FDDAF /* Checkbox.swift */,
 			);
@@ -264,7 +288,10 @@
 				7572E20126966B55006FDDAF /* check.gif in Resources */,
 				759893E8268E8C8F005F00AD /* CustomView.xib in Resources */,
 				759AC553268E822300F76351 /* LaunchScreen.storyboard in Resources */,
+				75B27CE9275D9B620035B1C4 /* Rubik-Regular.ttf in Resources */,
+				75B27CE7275D9B620035B1C4 /* Rubik-Medium.ttf in Resources */,
 				759893F6268E9EC3005F00AD /* Montserrat-Medium.ttf in Resources */,
+				75B27CE8275D9B620035B1C4 /* Rubik-OFL.txt in Resources */,
 				759AC550268E822300F76351 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,19 +346,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				7572E1FE269657E0006FDDAF /* Checkbox.swift in Sources */,
+				75B27CBE275C5A1D0035B1C4 /* Constants.swift in Sources */,
 				759893D8268E8B41005F00AD /* AppDelegate.swift in Sources */,
 				759893F4268E934C005F00AD /* MainViewController.swift in Sources */,
 				7572E1F22694E1EE006FDDAF /* CustomOverlayView.swift in Sources */,
-				759893E0268E8C78005F00AD /* Similar.swift in Sources */,
 				759893EC268E8CA2005F00AD /* DataViewController.swift in Sources */,
 				7572E1F4269501E9006FDDAF /* MovieTableViewCell.swift in Sources */,
 				759893DE268E8C73005F00AD /* TinderCardModel.swift in Sources */,
 				759893F2268E8CEA005F00AD /* UIView+Extensions.swift in Sources */,
 				759893EA268E8C95005F00AD /* CustomView.swift in Sources */,
 				759893DC268E8C6C005F00AD /* NetworkManager.swift in Sources */,
+				75B27CC1275D94690035B1C4 /* Applicationscheme.swift in Sources */,
 				759AC58E268E881900F76351 /* WhatToWhatch.xcdatamodeld in Sources */,
+				757BEC2126A10EC900372226 /* DetailMovieViewController.swift in Sources */,
 				759893E2268E8C7E005F00AD /* Movie.swift in Sources */,
+				75D6A61326B5DDD6008D49E5 /* UIColor.swift in Sources */,
 				759893DA268E8C64005F00AD /* StorageManager.swift in Sources */,
+				75ED63E626A1466100E430A2 /* Similar.swift in Sources */,
+				758C31F626A132ED008915BA /* MoviesCollectionViewCell.swift in Sources */,
 				759893F0268E8CAC005F00AD /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +508,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G97R3KR773;
 				INFOPLIST_FILE = WhatToWhatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -498,6 +531,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G97R3KR773;
 				INFOPLIST_FILE = WhatToWhatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

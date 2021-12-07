@@ -47,11 +47,12 @@ class NetworkManager {
                         
                     }
                     guard let data = data else { return }
+                    print(data)
                     let jsonDecoder = JSONDecoder()
                     do {
                         let movies = try? jsonDecoder.decode(Similar.self, from: data)
+                        print(movies)
                         guard let results = movies?.results else {return}
-                        
                         completion(results,nil)
                     } catch let error {
                         print(error.localizedDescription)
@@ -65,5 +66,32 @@ class NetworkManager {
         let string = array.map(String.init).joined(separator: ",")
         return string
     }
+    func searchSimilarMoviesById(id: String, completion: @escaping (ArraySlice<Result>, Error?) -> Void) {
+        guard let url = URL(string:"https://api.themoviedb.org/3/movie/\(id)/similar?api_key=da68977b15247aa866da5e39e0c44390&language=en-US&page=1") else { return }
 
+            URLSession.shared.dataTask(with: url) { (data, _, error) in
+            DispatchQueue.global().async {
+                DispatchQueue.main.async {
+                    if let error = error{
+                        print(error.localizedDescription)
+                    }
+                    guard let data = data else { return }
+                    let jsonDecoder = JSONDecoder()
+                    do {
+                        let movies = try? jsonDecoder.decode(Similar.self, from: data)
+                        guard let results = movies?.results[0..<5] else {return}
+                        completion(results,nil)
+                    } catch let error {
+                        print(error.localizedDescription)
+            
+                    }
+                }
+    }
+    }.resume()
+}
+    func getURL(posterPath: String) -> URL{
+        let urlFromPath = URL(string: "https://image.tmdb.org/t/p/w500/\(posterPath)")!
+        return urlFromPath
+    }
+    
 }

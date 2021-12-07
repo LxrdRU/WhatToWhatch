@@ -9,5 +9,6 @@ target 'WhatToWhatch' do
    pod 'Koloda'
    pod 'LGButton'
    pod 'BEMCheckBox'	
-
+   pod 'GravitySliderFlowLayout'
+   pod 'MaterialComponents'
 end
