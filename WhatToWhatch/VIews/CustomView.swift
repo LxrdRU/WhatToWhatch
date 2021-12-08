@@ -10,7 +10,6 @@ import UIKit
 class CustomView: UIView {
     
     
-    @IBOutlet weak var bgImageView: UIImageView!
     @IBOutlet weak var customImageView: UIImageView!
     @IBOutlet weak var customRatingLabel: UILabel!
     @IBOutlet weak var customYearLabel: UILabel!

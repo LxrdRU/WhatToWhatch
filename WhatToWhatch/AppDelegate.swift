@@ -27,12 +27,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             UIApplication.shared.statusBarView?.backgroundColor = ApplicationScheme.shared.colorScheme.primaryColor
         }
+        configureTabBarAppearance()
+        configureNavigationBarAppearance()
         
         return true
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
         StorageManager.shared.saveContext()
+    }
+    func configureNavigationBarAppearance() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = ApplicationScheme.shared.colorScheme.primaryColor
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+    }
+
+    func configureTabBarAppearance() {
+        let appearance = UITabBarAppearance()
+        appearance.backgroundColor = ApplicationScheme.shared.colorScheme.primaryColor
+        if #available(iOS 15.0, *) {
+            UITabBar.appearance().scrollEdgeAppearance = appearance
+        } else {
+            
+        }
+        UITabBar.appearance().standardAppearance = appearance
     }
 //
 //    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

@@ -43,7 +43,7 @@ class ApplicationScheme: NSObject {
     scheme.surfaceColor =
       UIColor(red: 255.0/255.0, green: 251.0/255.0, blue: 250.0/255.0, alpha: 1.0)
     scheme.onSurfaceColor =
-      UIColor(red: 68.0/255.0, green: 44.0/255.0, blue: 46.0/255.0, alpha: 1.0)
+      UIColor(red: 255.0/255.0, green: 250.0/255.0, blue: 239.0/255.0, alpha: 1.0)
     scheme.backgroundColor =
       UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0)
     scheme.onBackgroundColor =

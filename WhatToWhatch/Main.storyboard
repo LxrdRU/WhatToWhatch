@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="muU-g2-fEM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="muU-g2-fEM">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -669,7 +670,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="100" id="bPp-fK-hrv" customClass="MovieTableViewCell" customModule="WhatToWhatch" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bPp-fK-hrv" id="BoQ-GX-T82">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
@@ -688,9 +689,9 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L9c-L9-oQy">
-                                            <rect key="frame" x="9" y="11" width="114" height="79"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="123" height="117"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="114" id="mR4-Ld-4ho"/>
+                                                <constraint firstAttribute="width" constant="123" id="mR4-Ld-4ho"/>
                                             </constraints>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvj-jp-97U">
@@ -708,15 +709,15 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="fvj-jp-97U" secondAttribute="bottom" constant="17" id="HLT-Gl-qqk"/>
-                                        <constraint firstItem="L9c-L9-oQy" firstAttribute="leading" secondItem="BoQ-GX-T82" secondAttribute="leading" constant="9" id="HLg-Hs-R3O"/>
+                                        <constraint firstItem="L9c-L9-oQy" firstAttribute="leading" secondItem="BoQ-GX-T82" secondAttribute="leading" id="HLg-Hs-R3O"/>
                                         <constraint firstAttribute="trailing" secondItem="HrB-jf-Ss7" secondAttribute="trailing" constant="73" id="JtG-JT-hVh"/>
                                         <constraint firstItem="fvj-jp-97U" firstAttribute="top" secondItem="BoQ-GX-T82" secondAttribute="top" constant="59" id="Jua-rB-s8n"/>
                                         <constraint firstItem="bct-Wq-0GB" firstAttribute="leading" secondItem="L9c-L9-oQy" secondAttribute="trailing" constant="8" symbolic="YES" id="MfA-rc-abd"/>
                                         <constraint firstItem="HrB-jf-Ss7" firstAttribute="leading" secondItem="L9c-L9-oQy" secondAttribute="trailing" constant="8" symbolic="YES" id="SFD-uR-1Qv"/>
                                         <constraint firstAttribute="bottom" secondItem="bct-Wq-0GB" secondAttribute="bottom" constant="18.666666666666657" id="WoA-Pl-Wy2"/>
-                                        <constraint firstAttribute="bottom" secondItem="L9c-L9-oQy" secondAttribute="bottom" constant="10" id="cXD-kl-yGc"/>
+                                        <constraint firstAttribute="bottom" secondItem="L9c-L9-oQy" secondAttribute="bottom" constant="-17" id="cXD-kl-yGc"/>
                                         <constraint firstAttribute="trailing" secondItem="fvj-jp-97U" secondAttribute="trailing" constant="20" symbolic="YES" id="iBF-Mv-Vie"/>
-                                        <constraint firstItem="L9c-L9-oQy" firstAttribute="top" secondItem="BoQ-GX-T82" secondAttribute="top" constant="11" id="oOZ-KK-gZW"/>
+                                        <constraint firstItem="L9c-L9-oQy" firstAttribute="top" secondItem="BoQ-GX-T82" secondAttribute="top" id="oOZ-KK-gZW"/>
                                         <constraint firstItem="HrB-jf-Ss7" firstAttribute="top" secondItem="BoQ-GX-T82" secondAttribute="top" constant="11" id="tOV-hJ-edm"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -746,7 +747,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWW-Rc-JeA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3901.449275362319" y="859.23913043478262"/>
+            <point key="canvasLocation" x="3901.449275362319" y="859.15178571428567"/>
         </scene>
         <!--Detail Movie View Controller-->
         <scene sceneID="dl0-X5-Ror">
@@ -979,7 +980,7 @@
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

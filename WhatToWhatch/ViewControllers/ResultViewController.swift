@@ -47,11 +47,12 @@ class ResultViewController: UIViewController {
             urls.removeAll()
         }
     }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
     }
-    
 }
+
 extension ResultViewController{
     func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
         URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
@@ -102,6 +103,4 @@ extension ResultViewController:KolodaViewDataSource{
         view?.backgroundColor = ApplicationScheme.shared.colorScheme.backgroundColor
         return view!
       }
-
-    
 }

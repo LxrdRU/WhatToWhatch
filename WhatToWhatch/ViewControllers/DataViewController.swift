@@ -7,6 +7,7 @@
 
 import UIKit
 import MaterialComponents
+
 class DataViewController: UITableViewController {
     var models = StorageManager.shared.fetchData()
     {didSet {
@@ -18,7 +19,6 @@ class DataViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareVC()
-    
     }
 
     
@@ -26,41 +26,27 @@ class DataViewController: UITableViewController {
         models = StorageManager.shared.fetchData()
         tableView.reloadData()
     }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         1
     }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         models.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! MovieTableViewCell
-        
-        let model = models[indexPath.row]
-        cell.delegate = self
-        cell.likeOutlet.tag = indexPath.row
-        cell.contentView.backgroundColor = ApplicationScheme.shared.colorScheme.secondaryColor
-        cell.ratingLabel.textColor = ApplicationScheme.shared.colorScheme.onSurfaceColor
-        cell.titleLabel.textColor = ApplicationScheme.shared.colorScheme.onSurfaceColor
-
-    
-        cell.ratingLabel.font = ApplicationScheme.shared.typographyScheme.subtitle1
-        
-        
-        if(model.like == true){
-            cell.likeOutlet.setImage(UIImage(systemName: "heart.fill"), for: UIControl.State.normal)
-        }else{
-            cell.likeOutlet.setImage(UIImage(systemName: "heart"), for: UIControl.State.normal)
-
-        }
-        cell.imageView?.image = UIImage(data: model.image!)
-        cell.titleLabel.text = model.title ?? "" + "/" + (model.releaseDate?.prefix(4))!
-        cell.ratingLabel.text = String(model.rating)
+        self.configureCell(cell, for: indexPath)
 
         return cell
     }
+    
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(100)
     }
+    
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         let model = models[indexPath.row]
         
@@ -70,6 +56,8 @@ class DataViewController: UITableViewController {
             StorageManager.shared.delete(model)
         }
     }
+    
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let model = models[indexPath.row]
         tableView.deselectRow(at: indexPath, animated: true)
@@ -100,21 +88,42 @@ extension DataViewController: MovieTableViewCellDelegate{
     }
 }
 extension DataViewController{
-    func prepareVC() {
+    func configureCell(_ cell: MovieTableViewCell, for indexPath: IndexPath){
+        let model = models[indexPath.row]
+        cell.delegate = self
+        cell.likeOutlet.tag = indexPath.row
+        cell.contentView.backgroundColor = ApplicationScheme.shared.colorScheme.onSurfaceColor
+        cell.ratingLabel.textColor = ApplicationScheme.shared.colorScheme.onSecondaryColor
+        cell.titleLabel.textColor = ApplicationScheme.shared.colorScheme.onSecondaryColor
+
+    
+        cell.ratingLabel.font = ApplicationScheme.shared.typographyScheme.subtitle1
         
+        
+        if(model.like == true){
+            cell.likeOutlet.setImage(UIImage(systemName: "heart.fill"), for: UIControl.State.normal)
+        }else{
+            cell.likeOutlet.setImage(UIImage(systemName: "heart"), for: UIControl.State.normal)
+
+        }
+        cell.imageView?.image = UIImage(data: model.image!)
+        cell.titleLabel.text = model.title ?? "" + "/" + (model.releaseDate?.prefix(4))!
+        cell.ratingLabel.text = String(model.rating)
+    }
+    func prepareVC() {
         self.view.tintColor = .red
         tableView.backgroundColor = ApplicationScheme.shared.colorScheme.secondaryColor
-
-        
-//
         navigationController?.navigationBar.barTintColor = ApplicationScheme.shared.colorScheme.secondaryColor
-    
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "purebg")?.draw(in: self.view.bounds)
 
-        
-        
-        
-        
-      
+        if let image = UIGraphicsGetImageFromCurrentImageContext(){
+            UIGraphicsEndImageContext()
+            self.view.backgroundColor = UIColor(patternImage: image)
+        }else{
+            UIGraphicsEndImageContext()
+            debugPrint("Image not available")
+         }
     }
  
 }

@@ -78,7 +78,16 @@ extension MainViewController{
         for textLabel in textLabels{
             textLabel.font = typographyScheme.subtitle1
         }
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "bg2")?.draw(in: self.view.bounds)
 
+        if let image = UIGraphicsGetImageFromCurrentImageContext(){
+            UIGraphicsEndImageContext()
+            self.view.backgroundColor = UIColor(patternImage: image)
+        }else{
+            UIGraphicsEndImageContext()
+            debugPrint("Image not available")
+         }
     }
 }
 
